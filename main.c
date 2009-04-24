@@ -8,6 +8,7 @@ int main(void) {
 
   for(i = 0; i < MAXLINE; ++i){
     printf("line %d", i);
+    printf("%d is%s even\n", i&1 ? "not" : "");
   }
 
   return 0;
