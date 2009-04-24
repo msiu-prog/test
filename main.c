@@ -9,7 +9,8 @@ int main(void) {
   int i = 0;
 
   for(i = 0; i < MAXLINE; ++i){
-    printf("line %d some num is %d\n", i, get_some_number());
+    printf("line %d some num is %d", i, get_some_number());
+    printf("%d is%s even\n", i&1 ? "not" : "");
   }
 
   return 0;
